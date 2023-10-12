@@ -6,7 +6,7 @@ const Nav = () => {
     <div>
       <HStack justifyContent={"space-between"} padding={"10px"}>
         <HStack color={"green.500"}>
-          <Text>Navbar</Text>
+          <Text fontSize="2xl" fontWeight="bold">Game Hub</Text>
           <Icon as={FaGamepad} boxSize={10} />
         </HStack>
 
