@@ -10,9 +10,9 @@ const SortSelector = ({onSelectOrder,sortOrder}: Props) => {
     { value: "", label: "Relevance" },
     { value: "name", label: "Name" },
     { value: "-metacritic", label: "Popularity" },
-    { value: "added", label: "Date added" },
-    { value: "released", label: "Release date" },
-    { value: "rating", label: "Average rating" },
+    { value: "-added", label: "Date added" },
+    { value: "-released", label: "Release date" },
+    { value: "-rating", label: "Average rating" },
   ];
 
   const crrentSortOrder = sortOrders.find(order => order.value === sortOrder)
