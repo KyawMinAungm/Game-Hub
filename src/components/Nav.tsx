@@ -8,7 +8,7 @@ interface Props {
 const Nav = ({onSearch}:Props) => {
   return (
     <>
-      <HStack justifyContent={"space-between"} padding={"10px"} mb={3}>
+      <HStack justifyContent={"space-between"} padding={"10px"} >
         <HStack color={"green.500"}>
           <Show above="md">
             <Text whiteSpace={"nowrap"} fontSize="2xl" fontWeight="bold">
