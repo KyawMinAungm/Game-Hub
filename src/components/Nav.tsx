@@ -2,7 +2,10 @@ import { HStack, Icon, Show, Text } from "@chakra-ui/react";
 import ColorModeSwitch from "./ColorModeSwitch";
 import { FaGamepad } from "react-icons/fa";
 import SearchInput from "./SearchInput";
-const Nav = () => {
+interface Props {
+  onSearch : (searchText : string) => void;
+}
+const Nav = ({onSearch}:Props) => {
   return (
     <>
       <HStack justifyContent={"space-between"} padding={"10px"} mb={3}>
@@ -14,7 +17,7 @@ const Nav = () => {
           </Show>
           <Icon as={FaGamepad} boxSize={10} />
         </HStack>
-        <SearchInput />
+        <SearchInput onSearch={onSearch}/>
         <ColorModeSwitch />
       </HStack>
     </>
