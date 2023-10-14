@@ -12,7 +12,7 @@ const SearchInput = ({onSearch}:Props) => {
       e.preventDefault();
       if (ref.current) onSearch(ref.current.value)
     }}>
-      <InputGroup maxWidth={500}>
+      <InputGroup>
           <InputLeftElement children={<BsSearch/>}/>
         <Input ref={ref} variant={'filled'} placeholder='Search games' borderRadius="20px" focusBorderColor='green.700'/>
       </InputGroup>
