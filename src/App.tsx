@@ -56,3 +56,4 @@ const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery)
 };
 
 export default App;
+
