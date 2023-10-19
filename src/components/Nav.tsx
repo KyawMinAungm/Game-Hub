@@ -9,7 +9,7 @@ const Nav = ({onSearch}:Props) => {
   return (
     <>
       <HStack spacing={8} padding={"10px"} >
-        <HStack me={{base : 0 , md : 10}} >
+        <HStack minW='50px' me={{base : 0,md :10}} >
           <Image src={logo} boxSize='50px' />
           <Show above="md">
             <Text whiteSpace={"nowrap"} fontSize="2xl" fontWeight="bold">

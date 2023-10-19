@@ -1,11 +1,13 @@
-import { HStack, Switch, Text, useColorMode } from "@chakra-ui/react"
+import { Button, HStack, Switch, Text, useColorMode } from "@chakra-ui/react"
+import {PiSunDimDuotone} from 'react-icons/pi'
+import {IoIosMoon} from 'react-icons/io'
 
 const ColorModeSwitch = () => {
     const{colorMode,toggleColorMode}=useColorMode()
   return (
     <HStack>
-      <Switch isChecked={colorMode === "dark"} onChange={toggleColorMode} colorScheme="green"/>
-      <Text whiteSpace={"nowrap"}>Dark Mode</Text>
+      <Button  onClick={toggleColorMode}bg='transparent' borderRadius='20px' >{colorMode === "dark" ? <PiSunDimDuotone/>:<IoIosMoon/> }</Button>
+      
     </HStack>
   )
 }
