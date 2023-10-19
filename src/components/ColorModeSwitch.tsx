@@ -1,4 +1,4 @@
-import { Button, HStack, Switch, Text, useColorMode } from "@chakra-ui/react"
+import { Button, HStack, useColorMode } from "@chakra-ui/react"
 import {PiSunDimDuotone} from 'react-icons/pi'
 import {IoIosMoon} from 'react-icons/io'
 
