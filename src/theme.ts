@@ -16,8 +16,20 @@ const colors = {
     800: "#121212",
     900: "#111111",
   },
+  brand: {
+    50: "#ddecff",
+    100: "#afcbff",
+    200: "#7eadff",
+    300: "#4d92ff",
+    400: "#207bfe",
+    500: "#0a69e5",
+    600: "#0057b3",
+    700: "#003581",
+    800: "#001a50",
+    900: "#000620",
+  }
 };
 
-const theme = extendTheme({ config }, { colors });
+const theme = extendTheme({ config, colors });
 
 export default theme;

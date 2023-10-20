@@ -8,11 +8,11 @@ interface Props {
 const Nav = ({onSearch}:Props) => {
   return (
     <>
-      <HStack spacing={8} padding={"10px"} >
-        <HStack minW='50px' me={{base : 0,md :10}} >
-          <Image src={logo} boxSize='50px' />
+      <HStack spacing={5} padding={"10px"} >
+        <HStack  me={{base : 0,md :10}} minW="40px"  >
+          <Image src={logo} boxSize="40px" objectFit="scale-down" py={1} />
           <Show above="md">
-            <Text whiteSpace={"nowrap"} fontSize="2xl" fontWeight="bold">
+            <Text whiteSpace={"nowrap"} fontSize="2xl" fontWeight="bold" color='brand.300'>
               Game Hub
             </Text>
           </Show>
